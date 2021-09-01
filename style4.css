@@ -1,0 +1,144 @@
+:root{
+	--c1: #F4F1DE;
+	--c2: #E07A5F;
+	--c3: #3D405B;
+	--c4: #81B29A;
+	--c5: #F2CC8F;
+	--w: white;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{ 
+	background-color: var(--c1); 
+}
+
+.row::after{
+	content:"";
+	clear: both;
+	display: block;
+}
+
+[class*="col-"]{
+	display: block;
+	float: left;
+	padding: 15px; 
+}
+
+.header{
+	background-color: var(--w);
+	padding: 5px 0;
+	color: var(--c3);
+	text-align: center;
+}
+
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li{
+	padding: 15px;
+	background-color: var(--c2);
+	color: var(--w); 
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.menu li:hover{
+	box-shadow: 2px 2px var(--c3),2px 2px var(--c3);
+	opacity: 0.7;
+}
+
+.pp{
+	background-color: var(--w);
+	padding: 20px;
+	color: var(--c3);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pp h1{
+	text-align: center;
+}
+
+.aside{
+	background-color: var(--c2);
+	color: var(--w); 
+	padding: 15px; 
+	text-align: center;
+	margin: 0;
+}
+
+.footer{
+	background-color: var(--c5);
+	padding: 3px 0;
+	color: var(--c3);
+	text-align: center;  
+	margin-top: 20px;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	display: block;
+	margin: auto;
+ }
+ 
+.right{
+	float: right;
+}
+	 
+[class*="col-"]{
+	/*for mobiles*/	
+		width: 100%;
+}  
+
+@media only screen and (min-width: 600px) { 
+	/*for tablest*/
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+  
+	img{ 
+		 height: 200px;
+		 width: 500px;
+	}
+}
+
+ @media only screen and (min-width: 760px){ 
+	/* for descktops*/
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;} 
+	
+	img{ 
+		 height: 300px;
+		 width: 700px;
+	}
+ }
+
+
+	 
